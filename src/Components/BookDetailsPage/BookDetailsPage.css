@@ -1,0 +1,75 @@
+.book-details-page {
+  display: flex;
+  flex-direction: column; /* Display content in a column on small screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent dark gray background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+  border-radius: 12px; /* Rounded corners */
+  margin: 20px; /* Add margin to all sides */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds container height */
+}
+
+.book-details-page:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background color on hover */
+}
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-image {
+  margin-bottom: 20px; /* Add spacing between image and text */
+}
+
+.book-image img {
+  width: 250px; /* Set image width */
+  height: auto;
+  border-radius: 8px; /* Curved corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth image scale transition */
+}
+
+.book-image img:hover {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
+.book-info {
+  max-width: 100%; /* Adjust maximum width of the book info */
+  text-align: center; /* Center align text */
+}
+
+.book-info h2 {
+  margin-bottom: 10px; /* Add spacing below the title */
+  color: #ffffff; /* White text color */
+}
+
+.book-info p {
+  margin-bottom: 8px; /* Add spacing between paragraphs */
+  color: #e5e7eb; /* Light gray text color */
+}
+
+.book-info strong {
+  color: #ffffff; /* White text color */
+}
+
+.loading-message {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff; /* White text color */
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .book-details-page {
+    flex-direction: row; /* Display content in a row on larger screens */
+  }
+
+  .book-info {
+    margin-left: 20px; /* Add spacing between image and text */
+  }
+}
